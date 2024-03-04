@@ -202,7 +202,7 @@ function Home() {
                     <div className='ms-1 mt-2'>
                       <h6 class="">Project name: {item.title}</h6>
                       <p className='p-0 m-0'>Used Technologies: {item.language}</p>
-                      <p className='p-0 m-0'>Github link: {item.github}</p>
+                      <p className='p-0 m-0'>Github link: <a style={{textDecoration:"none"}} href={item.github}>{item.github}</a></p>
                       <p className='p-0 m-0'>Websit link: <a style={{textDecoration:"none"}} href={item.website}>{item.website}</a></p>
                       <p className='p-0 m-0'>Description: {item.overview}</p>
                     </div>
