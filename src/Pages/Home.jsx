@@ -197,7 +197,7 @@ function Home() {
             {
               allproject.length > 0 ?
                 allproject.map((item) => (
-                  <div className=' m-2 pt-3 mb-1 col-md-3 col-6  col-sm-5 col-xs-6 poster'>
+                  <div className=' m-2 pt-3 mb-1 me-4 col-md-3 col-6  col-sm-5 col-xs-6 poster'>
                     <img src={`${BASE_URL}/uploads/${item.projectImage}`} height={'190px'} width={'100%'} alt="" />
                     <div className='ms-1 me-2 mt-2'>
                       <h6 class="">Project name: {item.title}</h6>
