@@ -85,7 +85,7 @@ function Home() {
                 <p>Web Developer</p>
               </div>
             </div>
-            <div className='text-center'><button className='m-2 p-2' style={{ backgroundColor: "transparent" }}>Download CV</button></div>
+            <div className='text-center'><button className='m-2 p-2' style={{ backgroundColor: "transparent" }}><a style={{textDecoration:"none", color:"black"}} href="https://drive.google.com/file/d/1ekSzO8_X4SvR21It0YxHQnVBOks1QGmy/view?usp=sharing">Download CV</a></button></div>
           </div>
         </div>
       </div>
