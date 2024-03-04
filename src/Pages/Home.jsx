@@ -199,7 +199,7 @@ function Home() {
                 allproject.map((item) => (
                   <div className=' m-2 pt-3 mb-1 col-md-3 col-6  col-sm-5 col-xs-6 poster'>
                     <img src={`${BASE_URL}/uploads/${item.projectImage}`} height={'190px'} width={'100%'} alt="" />
-                    <div className='ms-1 mt-2'>
+                    <div className='ms-1 me-2 mt-2'>
                       <h6 class="">Project name: {item.title}</h6>
                       <p className='p-0 m-0'>Used Technologies: {item.language}</p>
                       <p className='p-0 m-0'>Github link: <a style={{textDecoration:"none"}} href={item.github}>{item.github}</a></p>
