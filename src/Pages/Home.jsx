@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Footer from '../Components/Footer';
@@ -43,24 +45,24 @@ function Home() {
 
       <div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container">
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav mx-auto">
-                <li class="fw-bold p-1 nav-item">
-                  <Link onClick={() => scrollToSection(about)} style={{ textDecoration: "none" }}><a class="nav-link" href="#about">About</a></Link>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav mx-auto">
+                <li className="fw-bold p-1 nav-item">
+                  <Link onClick={() => scrollToSection(about)} style={{ textDecoration: "none" }}><a className="nav-link" href="#about">About</a></Link>
                 </li>
-                <li class="fw-bold p-1 nav-item">
-                  <Link onClick={() => scrollToSection(experience)} style={{ textDecoration: "none" }}><a class="nav-link" href="#">Experience</a></Link>
+                <li className="fw-bold p-1 nav-item">
+                  <Link onClick={() => scrollToSection(experience)} style={{ textDecoration: "none" }}><a className="nav-link" href="#">Experience</a></Link>
                 </li>
-                <li class="fw-bold p-1 nav-item">
-                  <Link onClick={() => scrollToSection(project)} style={{ textDecoration: "none" }}> <a class="nav-link" href="#">Projects</a></Link>
+                <li className="fw-bold p-1 nav-item">
+                  <Link onClick={() => scrollToSection(project)} style={{ textDecoration: "none" }}> <a className="nav-link" href="#">Projects</a></Link>
                 </li>
-                <li class="fw-bold p-1 nav-item">
-                  <Link onClick={() => scrollToSection(contact)} style={{ textDecoration: "none" }}><a class="nav-link" href="#">Contact</a></Link>
+                <li className="fw-bold p-1 nav-item">
+                  <Link onClick={() => scrollToSection(contact)} style={{ textDecoration: "none" }}><a className="nav-link" href="#">Contact</a></Link>
                 </li>
               </ul>
             </div>
@@ -71,35 +73,35 @@ function Home() {
 
 
       <div className='mt-5 mb-5'>
-        <div class="container">
-          <div class="row">
-            <div class="d-flex justify-content-end col-md-6">
-              <div class=" p-3">
-                <img style={{ borderRadius: '50%' }} width={"350px"} class="img-fluid" src="Assets/main.jpg" alt="" />
+        <div className="container">
+          <div className="row">
+            <div className="d-flex justify-content-end col-md-6">
+              <div className=" p-3">
+                <img style={{ borderRadius: '50%' }} width={"350px"} className="img-fluid" src="Assets/main.jpg" alt="" />
               </div>
             </div>
-            <div class="d-flex align-items-center justify-content-start  col-md-6">
-              <div class=" p-3">
+            <div className="d-flex align-items-center justify-content-start  col-md-6">
+              <div className=" p-3">
                 <p>Hello, I'm</p>
                 <h2>Anand pv</h2>
                 <p>Web Developer</p>
               </div>
             </div>
-            <div className='text-center'><button className='m-2 p-2' style={{ backgroundColor: "transparent" }}><a style={{textDecoration:"none", color:"black"}} href="https://drive.google.com/file/d/1ekSzO8_X4SvR21It0YxHQnVBOks1QGmy/view?usp=sharing">Download CV</a></button></div>
+            <div className='text-center'><button className='m-2 p-2' style={{ backgroundColor: "transparent" }}><a style={{ textDecoration: "none", color: "black" }} href="https://drive.google.com/file/d/1ekSzO8_X4SvR21It0YxHQnVBOks1QGmy/view?usp=sharing">Download CV</a></button></div>
           </div>
         </div>
       </div>
 
       <div ref={about} className=' mb-5 mt-5'>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class=" p-3">
-                <img width={"450px"} style={{ borderRadius: '90px' }} class="img-fluid" src="Assets/b&w.jpg" alt="" />
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className=" p-3">
+                <img width={"450px"} style={{ borderRadius: '90px' }} className="img-fluid" src="Assets/b&w.jpg" alt="" />
               </div>
             </div>
-            <div class="d-flex col-md-6">
-              <div class="d-flex align-items-center p-3">
+            <div className="d-flex col-md-6">
+              <div className="d-flex align-items-center p-3">
                 <p>I AM A DEVELOPER AND UX/UI DESIGNER BASED IN KERALA.AND HARD WORKING, HONEST INDIVIDUAL AND A GOOD TIMEKEEPER, ALWAYS WILLING TO LEARN NEW SKILLS.ALSO FRIENDLY,
                   HELPFUL AND POLITE AND HAVE A GOOD SENSE OF HUMOUR. I AM ABLE TO WORK INDEPENDENTLY IN BUSY ENVIRONMENTS AND ALSO WITHIN A TEAM SETTING.
                   AND ABLE TO LISTEN EFFECTIVELY WHEN SOLVING PROBLEMS.</p>
@@ -111,13 +113,13 @@ function Home() {
 
 
       <div className='mb-2 pb-5 mt-5 pt-5' ref={experience}>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="text-center p-3">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="text-center p-3">
                 <h2>Frontend Development</h2>
-                <div class="container">
-                  <div class="row">
+                <div className="container">
+                  <div className="row">
                     <div className="col-md-12">
                       <div className="row">
                         <div className="col-3">
@@ -147,34 +149,35 @@ function Home() {
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-md-6">
-              <div class="text-center p-3">
+            <div className="col-md-6">
+              <div className="text-center p-3">
                 <h2>Backend Development</h2>
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="row">
-                        <div class="col-6">
-                          <div class="mt-3 p-3 mb-3"><img src="" alt="" />MONGO DB</div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="row">
+                        <div className="col-6">
+                          <div className="mt-3 p-3 mb-3"><img src="" alt="" />MONGO DB</div>
                         </div>
-                        <div class="col-6">
-                          <div class="mt-3 p-3 mb-3">NODE JS</div>
+                        <div className="col-6">
+                          <div className="mt-3 p-3 mb-3">NODE JS</div>
                         </div>
                       </div>
-                      <div class="row">
+                      <div className="row">
 
-                        <div class="col-4">
-                          <div class=" p-3 mb-3"></div>
+                        <div className="col-4">
+                          <div className=" p-3 mb-3"></div>
                         </div>
-                        <div class="col-4">
-                          <div class=" p-3 mb-3">EXPRESS</div>
+                        <div className="col-4">
+                          <div className=" p-3 mb-3">EXPRESS</div>
                         </div>
-                        <div class="col-4">
-                          <div class=" p-3 mb-3"></div>
+                        <div className="col-4">
+                          <div className=" p-3 mb-3"></div>
                         </div>
                       </div>
                     </div>
@@ -186,7 +189,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* //------------------------------------// */}
+
 
       <div className='mb-4' ref={project}>
         <div className="scrollbg pt-4 pb-4 row m-0">
@@ -230,8 +233,6 @@ function Home() {
         </div>
       </div>
 
-      {/* //------------------------------------// */}
-
       <div ref={contact} className='mt-5 mb-5'>
         <div class="container">
           <div class="d-flex justify-content-center row text-center">
@@ -247,9 +248,6 @@ function Home() {
           </div>
         </div>
       </div>
-
-
-      {/* =============== */}
 
       <Footer />
 
