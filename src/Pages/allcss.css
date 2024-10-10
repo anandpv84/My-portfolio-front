@@ -82,3 +82,38 @@
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
+
+
+  .project-info a {
+    text-decoration: none;
+    color: #007bff;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .project-info .description {
+    white-space: normal; 
+    overflow: visible; 
+    text-overflow: unset; 
+  }
+  
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  .project-info a {
+    text-decoration: none;
+    color: #007bff;
+    word-break: break-all;
+  }
+  
+  .project-info .description {
+    white-space: normal; 
+    overflow: visible;
+  }
+    
