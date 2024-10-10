@@ -118,29 +118,35 @@ function Home() {
                 <h2>Frontend Development</h2>
                 <div class="container">
                   <div class="row">
-                    <div class="col-md-12">
-                      <div class="row">
-                        <div class="col-4">
-                          <div class="mt-3 p-3 mb-3">HTML</div>
+                    <div className="col-md-12">
+                      <div className="row">
+                        <div className="col-3">
+                          <div className="mt-3 p-3 mb-3">HTML</div>
                         </div>
-                        <div class="col-4">
-                          <div class="mt-3 p-3 mb-3">CSS</div>
+                        <div className="col-3">
+                          <div className="mt-3 p-3 mb-3">CSS</div>
                         </div>
-                        <div class="col-4">
-                          <div class="mt-3 p-3 mb-3">JAVASCRIPT</div>
+                        <div className="col-3">
+                          <div className="mt-3 p-3 mb-3">BOOTSTRAP</div>
                         </div>
-                      </div>
-                      <div class="row">
+                        <div className="col-3">
+                          <div className="mt-3 p-3 mb-3">TAILWIND</div>
+                        </div>
 
-                        <div class="col-4">
-                          <div class=" p-3 mb-3">REACT JS</div>
+                      </div>
+
+                      <div className="row">
+                        <div className="col-4">
+                          <div className="p-3 mb-3">JAVASCRIPT</div>
                         </div>
-                        <div class="col-4">
-                          <div class=" p-3 mb-3">ANGULAR</div>
+                        <div className="col-4">
+                          <div className=" p-3 mb-3">REACT JS</div>
+                        </div>
+                        <div className="col-4">
+                          <div className=" p-3 mb-3">ANGULAR</div>
                         </div>
                       </div>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
