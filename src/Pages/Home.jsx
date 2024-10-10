@@ -182,40 +182,47 @@ function Home() {
       </div>
       {/* //------------------------------------// */}
 
-      <div className='p-3 mt-3 mb-4' ref={project}>
-
-        <div class="mb-4 d-flex justify-content-center container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <div class="fs-4 fw-bold custom-div">My all Projects</div>
+      <div className='mb-4' ref={project}>
+        <div className="scrollbg pt-4 pb-4 row m-0">
+          <div className="mb-4 d-flex justify-content-center container">
+            <div className="row">
+              <div className="col-sm-12 col-md-12 col-lg-12">
+                <div className="fs-4 fw-bold custom-div">My Projects</div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div className='scrollbg p-1 row'>
-          <div className='posters' style={{height:"auto"}}>
-            {
-              allproject.length > 0 ?
-                allproject.map((item) => (
-                  <div className=' m-2 pt-3 mb-1 me-4 ms-5 col-md-3 col-6  col-sm-5 col-xs-6 poster'>
-                    <img src={`${BASE_URL}/uploads/${item.projectImage}`} height={'190px'} width={'100%'} alt="" />
-                    <div className=' ms-1 me-2 mt-2'>
-                      <h6 class="">Project name: {item.title}</h6>
-                      <p className='p-0 m-0'>Used Technologies: {item.language}</p>
-                      <p className='p-0 m-0'>Github link: <a style={{textDecoration:"none"}} href={item.github}>{item.github}</a></p>
-                      <p className='p-0 m-0'>Websit link: <a style={{textDecoration:"none"}} href={item.website}>{item.website}</a></p>
-                      <p className='p-0 m-0'>Description: {item.overview}</p>
-                    </div>
+          <div className="posters d-flex flex-wrap justify-content-center">
+            {allproject.length > 0 ? (
+              allproject.slice().reverse().map((item) => (
+                <div
+                  className="project-card"
+                  style={{ maxWidth: "300px", margin: "15px" }}
+                  key={item._id}
+                >
+                  <img
+                    src={`${BASE_URL}/uploads/${item.projectImage}`}
+                    alt={item.title}
+                    style={{ width: "100%", height: "auto", objectFit: "cover" }}
+                  />
+                  <div className="project-info ms-1 me-2 mt-2">
+                    <h6>Project name: {item.title}</h6>
+                    <p className="p-0 m-0">Used Technologies: {item.language}</p>
+                    <p className="p-0 m-0">
+                      Github link: <a href={item.github}>{item.github}</a>
+                    </p>
+                    <p className="p-0 mb-2">
+                      Website link: <a href={item.website}>{item.website}</a>
+                    </p>
+                    <p className="p-0 m-0 description">Description: {item.overview}</p>
                   </div>
-
-
-                )) :
-                <p>No projects</p>
-            }
+                </div>
+              ))
+            ) : (
+              <p>No projects</p>
+            )}
           </div>
         </div>
       </div>
-      {/* //------------------------------------// */}
 
       {/* //------------------------------------// */}
 
