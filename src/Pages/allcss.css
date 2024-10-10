@@ -115,4 +115,30 @@
     white-space: normal; 
     overflow: visible;
   }
-    
+
+
+
+  .skill-card {
+   
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
+    width: 120px;
+  }
+
+  .skill-card:hover {
+    transform: scale(1.05);
+  
+  }
+
+  .skill-name {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .skill-icon {
+    width: 20px;
+    margin-right: 8px;
+  }
