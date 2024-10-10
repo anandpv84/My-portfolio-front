@@ -136,9 +136,6 @@ function Home() {
                 <div className="skill-card">
                   <p className="skill-name">React JS</p>
                 </div>
-                <div className="skill-card">
-                  <p className="skill-name">Angular</p>
-                </div>
               </div>
             </div>
 
