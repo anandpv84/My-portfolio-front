@@ -114,76 +114,46 @@ function Home() {
 
       <div className='mb-2 pb-5 mt-5 pt-5' ref={experience}>
         <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="text-center p-3">
-                <h2>Frontend Development</h2>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="row">
-                        <div className="col-3">
-                          <div className="mt-3 p-3 mb-3">HTML</div>
-                        </div>
-                        <div className="col-3">
-                          <div className="mt-3 p-3 mb-3">CSS</div>
-                        </div>
-                        <div className="col-3">
-                          <div className="mt-3 p-3 mb-3">BOOTSTRAP</div>
-                        </div>
-                        <div className="col-3">
-                          <div className="mt-3 p-3 mb-3">TAILWIND</div>
-                        </div>
-
-                      </div>
-
-                      <div className="row">
-                        <div className="col-4">
-                          <div className="p-3 mb-3">JAVASCRIPT</div>
-                        </div>
-                        <div className="col-4">
-                          <div className=" p-3 mb-3">REACT JS</div>
-                        </div>
-                        <div className="col-4">
-                          <div className=" p-3 mb-3">ANGULAR</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+          <div className="row text-center">
+            <div className="col-md-6 mb-4">
+              <h2 className="mb-4">Frontend Development</h2>
+              <div className="d-flex flex-wrap justify-content-around">
+                <div className="skill-card">
+                  <p className="skill-name">HTML</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">CSS</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">Bootstrap</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">Tailwind</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">JavaScript</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">React JS</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">Angular</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-md-6">
-              <div className="text-center p-3">
-                <h2>Backend Development</h2>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="row">
-                        <div className="col-6">
-                          <div className="mt-3 p-3 mb-3"><img src="" alt="" />MONGO DB</div>
-                        </div>
-                        <div className="col-6">
-                          <div className="mt-3 p-3 mb-3">NODE JS</div>
-                        </div>
-                      </div>
-                      <div className="row">
-
-                        <div className="col-4">
-                          <div className=" p-3 mb-3"></div>
-                        </div>
-                        <div className="col-4">
-                          <div className=" p-3 mb-3">EXPRESS</div>
-                        </div>
-                        <div className="col-4">
-                          <div className=" p-3 mb-3"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+            <div className="col-md-6 mb-4">
+              <h2 className="mb-4">Backend Development</h2>
+              <div className="d-flex flex-wrap justify-content-around">
+                <div className="skill-card d-flex align-items-center">
+                  <p className="skill-name">MongoDB</p>
                 </div>
-
+                <div className="skill-card">
+                  <p className="skill-name">Node JS</p>
+                </div>
+                <div className="skill-card">
+                  <p className="skill-name">Express</p>
+                </div>
               </div>
             </div>
           </div>
