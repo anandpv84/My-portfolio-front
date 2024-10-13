@@ -176,7 +176,7 @@ function Home() {
                   key={item._id}
                 >
                   <img
-                    src={`${BASE_URL}/uploads/${item.projectImage}`}
+                    src={item.projectImage}
                     alt={item.title}
                     style={{ width: "100%", height: "auto", objectFit: "cover" }}
                   />
