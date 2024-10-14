@@ -194,7 +194,7 @@ function Home() {
                 </div>
               ))
             ) : (
-              <p>No projects</p>
+              <p>Wait..</p>
             )}
           </div>
         </div>
