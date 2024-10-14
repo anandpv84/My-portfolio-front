@@ -54,7 +54,7 @@ function Dashboard() {
         alert("project added successfully")
         handleClose()
       } else (
-        alert(result.data.message)
+        alert(result.response.data.message)
       )
     }
   }
