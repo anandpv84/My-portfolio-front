@@ -54,7 +54,7 @@ function Dashboard() {
         alert("project added successfully")
         handleClose()
       } else (
-        alert(result.data?.message || "Failed to add project")
+        alert(result.data || "Failed to add project")
       )
     }
   }
