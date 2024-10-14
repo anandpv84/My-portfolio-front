@@ -116,7 +116,7 @@ function Dashboard() {
                 </thead>
                 {
                   allproject?.length > 0 ?
-                    allproject.map((item) => (
+                    allproject.slice().reverse().map((item) => (
                       <tbody>
                         <tr>
                           <td>{item.title}</td>
